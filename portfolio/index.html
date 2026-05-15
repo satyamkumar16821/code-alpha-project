@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Satyam Kumar | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="bg-animation"></div>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1 class="logo">Satyam Kumar</h1>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+      <h3>Hello, I'm</h3>
+
+      <h1>Satyam Kumar</h1>
+
+      <h2>Web Developer & Programmer</h2>
+
+      <p>
+        Passionate developer with strong interest in programming,
+        web design and problem solving.
+      </p>
+
+      <div class="buttons">
+        <button>Hire Me</button>
+        <button>Download CV</button>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Profile">
+    </div>
+
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+
+    <h2>About Me</h2>
+
+    <div class="glass-card">
+
+      <p>
+        Hello, I am Satyam Kumar, a passionate and hardworking beginner web developer and programmer.
+        I enjoy learning new technologies and building creative projects using HTML, CSS, JavaScript,
+        C, C++, Basic Java, and SQL.
+      </p>
+      <br>
+      <p>
+        I have strong interest in frontend development and designing responsive websites that look modern
+        and attractive on all devices. I always try to improve my coding skills and learn new concepts
+        every day.
+      </p>
+      <br>
+      <p>
+        I am a quick learner, team player, and dedicated person who wants to grow in the software industry.
+        My goal is to work in a professional company where I can improve my skills, gain experience,
+        and contribute to real-world projects.
+      </p>
+      <br>
+      <p>
+        I believe in hard work, consistency, and continuous learning. I am always excited to take new
+        challenges and create useful applications that help people.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+
+    <h2>My Skills</h2>
+
+    <div class="skills-container">
+
+      <div class="skill-card">C</div>
+      <div class="skill-card">C++</div>
+      <div class="skill-card">Basic Java</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="projects-container">
+
+      <div class="project-card">
+
+        <img src="calculator.png" alt="Calculator">
+
+        <h3>Calculator App</h3>
+
+        <p>Responsive calculator using HTML, CSS & JavaScript.</p>
+
+        <button onclick="openPopup('calculator.png')">
+          View Project
+        </button>
+
+      </div>
+
+      <div class="project-card">
+
+        <img src="ecommerce.png" alt="Ecommerce">
+
+        <h3>E-Commerce Website</h3>
+
+        <p>Shopping website UI using HTML & CSS.</p>
+
+        <button onclick="openPopup('ecommerce.png')">
+          View Project
+        </button>
+
+      </div>
+
+      <div class="project-card">
+
+        <img src="login.png" alt="login">
+
+        <h3>Login page</h3>
+
+        <p>This project is a modern and responsive login page with email and password  using HTML, CSS,and Js.</p>
+
+        <button onclick="openPopup('login.png')">
+          View Project
+        </button>
+
+      </div>
+
+      <div class="project-card">
+
+        <img src="portfolio.png" alt="Portfolio">
+
+        <h3>Portfolio Website</h3>
+
+        <p>Modern responsive portfolio design.</p>
+
+        <button onclick="openPopup('portfolio.png')">
+          View Project
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+
+    <span onclick="closePopup()">×</span>
+
+    <img id="popup-img">
+
+  </div>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+
+    <h2>Contact Me</h2>
+
+    <form id="contact-form">
+
+      <input type="text" name="form_name" placeholder="Your Name" required>
+
+      <input type="email" name="form_email" placeholder="Your Email" required>
+
+      <textarea name="message" placeholder="Your Message"></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Satyam Kumar | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
